@@ -10,12 +10,242 @@
       content="web-developer, react, JavaScript, application, responsive"
     />
     <title>CV Lera Ivanova</title>
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <header class="header">
+      <section class="header__wrapper">
+        <div class="header__wrapper--left">
+          <h2 class="full-name">VALERIJA IVANOVA</h2>
+          <h3 class="position">FRONT-END DEVELOPER</h3>
+        </div>
+        <div class="header__wrapper--right">
+          <article class="about-me">
+            MY BACKGROUND IN VIDEO ADVERTISING PRODUCTION AND DIGITAL ART LED ME
+            TO FRONT-END DEVELOPMENT, WHERE I CAN BE MORE HANDS-ON CREATIVELY. I
+            ENJOY CRAFTING USER-FRIENDLY, ENGAGING WEBSITES AS WELL AS ALWAYS
+            OPEN TO NEW LEARNING EXPERIENCES FOR GROWTH AND IMPROVEMENT. I
+            APPROACH EVERY PROJECT WITH KINDNESS AND A WILLINGNESS TO
+            COLLABORATE, WHICH I BELIEVE ENHANCES THE CREATIVE DEVELOPMENT
+            PROCESS.
+          </article>
+          <p class="date">JULY 2024</p>
+          <img
+            class="signature"
+            src="./assets/img/signature.png"
+            alt="signature"
+          />
+        </div>
+      </section>
+      <h1 class="title">CURRICULUM VITAE</h1>
+    </header>
+    <main class="main">
+      <div class="main__left">
+        <!-- EDUCATION SECTION -->
+        <section class="education">
+          <h3 class="section-title">EDUCATION</h3>
+          <ul>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>SECONDARY</p>
+                <p>2008 - 2020</p>
+              </div>
+              <p class="row-content">
+                DAUGAVPILS TECHNOLOGY HIGH SCHOOL LYCEUM
+              </p>
+            </li>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>FRONT-END DEVELOPMENT</p>
+                <p>2024</p>
+              </div>
+
+              <div class="main__row-container">
+                <p class="row-content">BEETROOT ACADEMY AB</p>
+                <i class="fa-regular fa-eye icon"></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- EXPERIENCE SECTION -->
+        <section class="experience">
+          <h3 class="section-title">EXPERIENCE</h3>
+          <ul>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>DIGITAL CONTENT PRODUCER</p>
+                <p>2022 - 2024</p>
+              </div>
+              <p class="description">
+                project management; meeting deadlines; user-centered thinking;
+                multitasking; collaboration
+              </p>
+            </li>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>RECIPIES' REACT APP</p>
+                <div class="icons-section">
+                  <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
+                  <a href="https://github.com/platiins/cook-book"
+                    ><i class="fa-solid fa-code-compare icon"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="description">
+                login: <span class="credentials">foodLover666</span> password:
+                <span class="credentials">0000</span>
+              </p>
+              <p class="description">
+                individual project; React JS; Sass; data from API
+              </p>
+            </li>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>MONTICELLO</p>
+                <div class="icons-section">
+                  <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
+                  <a href="https://github.com/platiins/monticello"
+                    ><i class="fa-solid fa-code-compare icon"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="description">
+                individual project; HTML5; Sass; JavaScript; jQuery Slick
+                Slider; Google Maps API, responsive design
+              </p>
+            </li>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>MUSIX-MATCH REACT APP</p>
+                <div class="icons-section">
+                  <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
+                  <a href="https://github.com/platiins/musix-match"
+                    ><i class="fa-solid fa-code-compare icon"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="description">
+                individual project; React JS; responsive design; Sass; data from
+                API
+              </p>
+            </li>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>PINK BEAR RESTAURANT WEBPAGE</p>
+                <div class="icons-section">
+                  <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
+                  <a
+                    href="https://github.com/BeetrootAcademyAccount2/group3-html-css"
+                    ><i class="fa-solid fa-code-compare icon"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="description">
+                group project - reviewing PRs; HTML5; CSS; responsive design
+              </p>
+            </li>
+            <li>
+              <div class="main__row-container mt-20">
+                <p>MAAJA - APARTMENTS WEBSITE</p>
+                <div class="icons-section">
+                  <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
+                  <a href="https://github.com/platiins/apartments"
+                    ><i class="fa-solid fa-code-compare icon"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="description">
+                individual project; HTML5; CSS; personal and responsive design*
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- SKILLS SECTION -->
+        <section class="skills row-content">
+          <h3 class="section-title">SKILLS</h3>
+          <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS/SASS</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT JS</li>
+            <li>RESPONSIVE WEB DESIGN</li>
+            <li>GIT/GITHUB</li>
+          </ul>
+        </section>
+        <!-- LANGUAGES SECTION -->
+        <section class="languages row-content">
+          <h3 class="section-title">LANGUAGES</h3>
+          <ul>
+            <li>
+              <div class="main__row-container language mt-20">
+                <p>ENGLISH</p>
+                <p>C1</p>
+              </div>
+            </li>
+            <li>
+              <div class="main__row-container language mt-20">
+                <p>NORWEGIAN</p>
+                <p>C1</p>
+              </div>
+            </li>
+            <li>
+              <div class="main__row-container language mt-20">
+                <p>LATVIAN</p>
+                <p>C1</p>
+              </div>
+            </li>
+            <li>
+              <div class="main__row-container language mt-20">
+                <p>RUSSIAN</p>
+                <p>C2</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="main__right">
+        <img class="avatar" src="./assets/img/profile.JPG" alt="avatar" />
+
+        <div class="contacts">
+          <a href="mailto:valerijaaivanovaa@gmail.com"
+            >valerijaaivanovaa@gmail.com</a
+          >
+          <p>+371 26210032</p>
+          <p>
+            Riga, Latvia /<span class="relocation">/ open to relocation</span>
+          </p>
+        </div>
+        <div class="socials">
+          <!-- GITHUB -->
+          <button type="button" class="sm-btn github-btn">
+            <i class="fa-brands fa-square-github sm-icon"></i>
+            <a href="https://github.com/platiins">GITHUB</a>
+          </button>
+          <!-- LINKEDIN -->
+          <button type="button" class="sm-btn linkedin-btn">
+            <i class="fa-brands fa-linkedin sm-icon"></i>
+            <a href="https://www.linkedin.com/in/platiins/">LINKED IN</a>
+          </button>
+          <!-- INSTAGRAM -->
+          <button type="button" class="sm-btn email-btn">
+            <i class="fa-brands fa-instagram sm-icon"></i>
+            <a href="https://www.instagram.com/platiins/">INSTAGRAM</a>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>ALL RIGHTS RESERVED</p>
+      <p>2024 | PT</p>
+    </footer>
   </body>
 </html>

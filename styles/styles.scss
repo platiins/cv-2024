@@ -1,0 +1,239 @@
+@use "mixins" as *;
+
+// TITLES
+@font-face {
+  font-family: "Fjalla One";
+  src: url(../assets/fonts/Fjalla_One/FjallaOne-Regular.ttf) format(truetype);
+}
+
+// REGULAR TEXT
+@font-face {
+  font-family: "Victor Mono";
+  src: url(../assets/fonts/Victor_Mono/static/VictorMono-ExtraLight.ttf)
+    format(truetype);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Victor Mono";
+  src: url(../assets/fonts/Victor_Mono/static/VictorMono-Regular.ttf)
+    format(truetype);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Victor Mono";
+  src: url(../assets/fonts/Victor_Mono/static/VictorMono-Bold.ttf)
+    format(truetype);
+  font-weight: 700;
+}
+
+body {
+  font-family: "Victor Mono", monospace;
+  margin: 50px;
+
+  a,
+  a:focus {
+    color: inherit;
+  }
+}
+
+.header {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+
+    &--left {
+      font-family: "Fjalla One", monospace;
+      width: 50%;
+
+      .full-name {
+        font-size: 70px;
+      }
+
+      .position {
+        font-size: 30px;
+        margin-top: 20px;
+      }
+    }
+
+    &--right {
+      width: 50%;
+      position: relative;
+
+      .about-me {
+        text-align: justify;
+        line-height: 22px;
+        font-size: 16px;
+      }
+
+      .date {
+        margin-top: 35px;
+      }
+
+      .signature {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        right: 15px;
+        top: 100px;
+        z-index: 2;
+      }
+    }
+  }
+
+  .title {
+    font-family: "Fjalla One", monospace;
+    font-size: 120px;
+    text-align: center;
+    letter-spacing: 30px;
+    margin: 50px 0;
+  }
+}
+
+.main {
+  @include flex(row, space-between, start, 50px);
+  padding: 0 100px 20px;
+  font-size: 25px;
+
+  // LEFT SIDE OF MAIN SECTION
+
+  &__left {
+    width: 45%;
+  }
+
+  .section-title {
+    font-family: "Fjalla One", monospace;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  &__row-container {
+    @include flex(row, space-between, center, 20px);
+    width: 100%;
+  }
+
+  .row-content {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  .icon {
+    font-size: 25px;
+    margin: 10px 0 0 10px;
+    color: #606c38;
+  }
+
+  .skills-list {
+    @include flex(row, space-evenly, center, 30px 30px);
+    flex-wrap: wrap;
+    margin: 40px 0;
+
+    li {
+      width: 28%;
+      text-align: center;
+    }
+  }
+
+  .language {
+    border-bottom: 2px solid #606c38;
+    padding: 10px 0;
+  }
+
+  // RIGHT SIDE OF MAIN SECTION
+
+  &__right {
+    @include flex(column, space-evenly, center, 100px);
+    width: 45%;
+    font-size: 18px;
+    margin-top: 50px;
+
+    .avatar {
+      width: 500px;
+      margin-top: 30px;
+      border: solid 5px black;
+    }
+
+    .contacts {
+      @include flex(column, space-evenly, center, 30px);
+
+      .relocation {
+        color: #606c38;
+      }
+    }
+
+    .socials {
+      @include flex(row, center, center, 15px);
+      font-family: "Fjalla One", monospace;
+
+      .sm-btn {
+        @include flex(column, center, center, 20px);
+        width: 200px;
+        height: 70px;
+        background-color: transparent;
+        border: white 2px solid;
+        overflow: hidden;
+        position: relative;
+        color: #606c38;
+        font-size: 20px;
+        font-family: "Fjalla One", monospace;
+
+        .sm-icon {
+          position: absolute;
+          z-index: 2;
+          transition: 300ms ease-out;
+          font-size: 30px;
+        }
+
+        a {
+          transform: translateY(-50px);
+          text-decoration: none;
+          transition: 300ms ease-out;
+        }
+
+        &:hover .sm-icon {
+          transform: translateY(70px);
+          transition: 300ms ease-in;
+        }
+
+        &:hover a {
+          transform: translateY(0px);
+          transition: 300ms ease-in;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// ARTICLE TEXT STYLING
+.description {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.credentials {
+  color: white;
+  font-weight: 700;
+  transition-duration: 3000ms;
+
+  &:hover {
+    color: #606c38;
+    transition-duration: 1000ms;
+  }
+}
+
+.footer {
+  @include flex(row, space-between, center, 200px);
+  margin: 70px 50px 0;
+  font-size: 16px;
+  font-family: "Fjalla One", monospace;
+}
