@@ -81,7 +81,7 @@ body a:focus {
   font-size: 25px;
 }
 .main__left {
-  width: 45%;
+  width: 50%;
 }
 .main .section-title {
   font-family: "Fjalla One", monospace;
@@ -95,17 +95,25 @@ body a:focus {
   align-items: center;
   gap: 20px;
   width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.main__row-container:hover {
+  cursor: pointer;
 }
 .main .row-content {
-  margin-top: 10px;
   font-size: 18px;
+  font-weight: 400;
 }
-.main .mt-20 {
-  margin-top: 20px;
+.main .mt-25 {
+  margin-top: 25px;
+}
+.main .mt-15 {
+  margin-top: 15px;
 }
 .main .icon {
-  font-size: 25px;
-  margin: 10px 0 0 10px;
+  font-size: 22px;
+  margin-left: 20px;
   color: #606c38;
 }
 .main .skills-list {
@@ -121,34 +129,30 @@ body a:focus {
   width: 28%;
   text-align: center;
 }
-.main .language {
-  border-bottom: 2px solid #606c38;
+.main .data {
+  border-bottom: 1px solid #606c38;
   padding: 10px 0;
+}
+.main .data .symbol {
+  color: #606c38;
+  font-size: 20px;
 }
 .main__right {
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  gap: 100px;
-  width: 45%;
+  gap: 50px;
+  width: 40%;
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .main__right .avatar {
   width: 500px;
-  margin-top: 30px;
-  border: solid 5px black;
+  border: solid 3px #606c38;
 }
 .main__right .contacts {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 30px;
-}
-.main__right .contacts .relocation {
-  color: #606c38;
+  width: 85%;
 }
 .main__right .socials {
   display: flex;
@@ -157,6 +161,7 @@ body a:focus {
   align-items: center;
   gap: 15px;
   font-family: "Fjalla One", monospace;
+  margin-top: 50px;
 }
 .main__right .socials .sm-btn {
   display: flex;
@@ -164,7 +169,7 @@ body a:focus {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 200px;
+  width: 150px;
   height: 70px;
   background-color: transparent;
   border: white 2px solid;
@@ -195,7 +200,13 @@ body a:focus {
   font-weight: 700;
 }
 
-.description {
+.toggle-description {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-description.active {
+  display: block;
   margin-top: 15px;
   font-size: 16px;
   line-height: 22px;

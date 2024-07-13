@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -55,21 +56,23 @@
           <h3 class="section-title">EDUCATION</h3>
           <ul>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25">
                 <p>SECONDARY</p>
                 <p>2008 - 2020</p>
               </div>
-              <p class="row-content">
-                DAUGAVPILS TECHNOLOGY HIGH SCHOOL LYCEUM
-              </p>
+              <div class="main__row-container mt-15">
+                <p class="row-content">
+                  DAUGAVPILS TECHNOLOGY HIGH SCHOOL LYCEUM
+                </p>
+                <i class="fa-regular fa-eye icon"></i>
+              </div>
             </li>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25">
                 <p>FRONT-END DEVELOPMENT</p>
                 <p>2024</p>
               </div>
-
-              <div class="main__row-container">
+              <div class="main__row-container mt-15">
                 <p class="row-content">BEETROOT ACADEMY AB</p>
                 <i class="fa-regular fa-eye icon"></i>
               </div>
@@ -81,17 +84,17 @@
           <h3 class="section-title">EXPERIENCE</h3>
           <ul>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25 toggle-title">
                 <p>DIGITAL CONTENT PRODUCER</p>
                 <p>2022 - 2024</p>
               </div>
-              <p class="description">
+              <p class="toggle-description">
                 project management; meeting deadlines; user-centered thinking;
                 multitasking; collaboration
               </p>
             </li>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25 toggle-title">
                 <p>RECIPIES' REACT APP</p>
                 <div class="icons-section">
                   <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
@@ -100,16 +103,12 @@
                   ></a>
                 </div>
               </div>
-              <p class="description">
-                login: <span class="credentials">foodLover666</span> password:
-                <span class="credentials">0000</span>
-              </p>
-              <p class="description">
+              <p class="toggle-description">
                 individual project; React JS; Sass; data from API
               </p>
             </li>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25 toggle-title">
                 <p>MONTICELLO</p>
                 <div class="icons-section">
                   <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
@@ -118,13 +117,13 @@
                   ></a>
                 </div>
               </div>
-              <p class="description">
+              <p class="toggle-description">
                 individual project; HTML5; Sass; JavaScript; jQuery Slick
                 Slider; Google Maps API, responsive design
               </p>
             </li>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25 toggle-title">
                 <p>MUSIX-MATCH REACT APP</p>
                 <div class="icons-section">
                   <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
@@ -133,13 +132,13 @@
                   ></a>
                 </div>
               </div>
-              <p class="description">
+              <p class="toggle-description">
                 individual project; React JS; responsive design; Sass; data from
                 API
               </p>
             </li>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25 toggle-title">
                 <p>PINK BEAR RESTAURANT WEBPAGE</p>
                 <div class="icons-section">
                   <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
@@ -149,12 +148,12 @@
                   ></a>
                 </div>
               </div>
-              <p class="description">
+              <p class="toggle-description">
                 group project - reviewing PRs; HTML5; CSS; responsive design
               </p>
             </li>
             <li>
-              <div class="main__row-container mt-20">
+              <div class="main__row-container mt-25 toggle-title">
                 <p>MAAJA - APARTMENTS WEBSITE</p>
                 <div class="icons-section">
                   <a href=""><i class="fa-solid fa-window-restore icon"></i></a>
@@ -163,7 +162,7 @@
                   ></a>
                 </div>
               </div>
-              <p class="description">
+              <p class="toggle-description">
                 individual project; HTML5; CSS; personal and responsive design*
               </p>
             </li>
@@ -186,25 +185,25 @@
           <h3 class="section-title">LANGUAGES</h3>
           <ul>
             <li>
-              <div class="main__row-container language mt-20">
+              <div class="main__row-container data mt-25">
                 <p>ENGLISH</p>
                 <p>C1</p>
               </div>
             </li>
             <li>
-              <div class="main__row-container language mt-20">
+              <div class="main__row-container data mt-25">
                 <p>NORWEGIAN</p>
                 <p>C1</p>
               </div>
             </li>
             <li>
-              <div class="main__row-container language mt-20">
+              <div class="main__row-container data mt-25">
                 <p>LATVIAN</p>
                 <p>C1</p>
               </div>
             </li>
             <li>
-              <div class="main__row-container language mt-20">
+              <div class="main__row-container data mt-25">
                 <p>RUSSIAN</p>
                 <p>C2</p>
               </div>
@@ -214,16 +213,35 @@
       </div>
       <div class="main__right">
         <img class="avatar" src="./assets/img/profile.JPG" alt="avatar" />
-
-        <div class="contacts">
-          <a href="mailto:valerijaaivanovaa@gmail.com"
-            >valerijaaivanovaa@gmail.com</a
-          >
-          <p>+371 26210032</p>
-          <p>
-            Riga, Latvia /<span class="relocation">/ open to relocation</span>
-          </p>
-        </div>
+        <ul class="contacts">
+          <li>
+            <div class="main__row-container data mt-25">
+              <p><i class="fa-solid fa-envelope symbol"></i></p>
+              <a href="mailto:valerijaaivanovaa@gmail.com"
+                >valerijaaivanovaa@gmail.com</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="main__row-container data mt-25">
+              <p><i class="fa-solid fa-phone symbol"></i></p>
+              <p>+371 26210032</p>
+            </div>
+          </li>
+          <li>
+            <div class="main__row-container data mt-25">
+              <p><i class="fa-solid fa-location-dot symbol"></i></p>
+              <p>Riga, Latvia</p>
+            </div>
+          </li>
+          <li>
+            <div class="main__row-container data mt-25">
+              <p><i class="fa-solid fa-globe symbol"></i></p>
+              <p>open to relocation</p>
+            </div>
+          </li>
+        </ul>
+        <!-- </div> -->
         <div class="socials">
           <!-- GITHUB -->
           <button type="button" class="sm-btn github-btn">
