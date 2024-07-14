@@ -135,6 +135,10 @@ body {
     margin-top: 15px;
   }
 
+  .mt-10 {
+    margin-top: 10px;
+  }
+
   .icon {
     font-size: 22px;
     margin-left: 20px;
@@ -183,7 +187,7 @@ body {
 
     .avatar {
       width: 500px;
-      border: solid 3px #606c38;
+      border: solid 3px #838e83;
     }
 
     .contacts {
@@ -240,6 +244,10 @@ body {
 .toggle-description {
   display: none;
   transition: all 0.3s ease-in-out;
+
+  p {
+    margin-bottom: 5px;
+  }
 }
 .toggle-description.active {
   display: block;

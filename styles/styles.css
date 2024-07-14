@@ -112,6 +112,9 @@ body a:focus {
 .main .mt-15 {
   margin-top: 15px;
 }
+.main .mt-10 {
+  margin-top: 10px;
+}
 .main .icon {
   font-size: 22px;
   margin-left: 20px;
@@ -159,7 +162,7 @@ body a:focus {
 }
 .main__right .avatar {
   width: 500px;
-  border: solid 3px #606c38;
+  border: solid 3px #838e83;
 }
 .main__right .contacts {
   width: 85%;
@@ -213,6 +216,9 @@ body a:focus {
 .toggle-description {
   display: none;
   transition: all 0.3s ease-in-out;
+}
+.toggle-description p {
+  margin-bottom: 5px;
 }
 
 .toggle-description.active {
