@@ -126,7 +126,7 @@ body a:focus {
   margin: 40px 0;
 }
 .main .skills-list li {
-  width: 28%;
+  width: 30%;
   text-align: center;
 }
 .main .data {
@@ -248,4 +248,37 @@ body a:focus {
   margin: 70px 50px 0;
   font-size: 16px;
   font-family: "Fjalla One", monospace;
+}
+
+.cert-modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.cert-modal__content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+  height: 50%;
+  position: relative;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+}
+.cert-modal__content .close {
+  font-size: 40px;
+  background-color: transparent;
+  color: white;
+}
+.cert-modal__content .cert-img {
+  width: 800px;
+  height: 600px;
 }/*# sourceMappingURL=styles.css.map */

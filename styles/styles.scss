@@ -146,7 +146,7 @@ body {
     margin: 40px 0;
 
     li {
-      width: 28%;
+      width: 30%;
       text-align: center;
     }
   }
@@ -269,4 +269,38 @@ body {
   margin: 70px 50px 0;
   font-size: 16px;
   font-family: "Fjalla One", monospace;
+}
+
+// MODALS FOR CERTIFICATES
+
+.cert-modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  &__content {
+    @include flex(column, center, center, 20px);
+    width: 60%;
+    height: 50%;
+    position: relative;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+
+    .close {
+      font-size: 40px;
+      background-color: transparent;
+      color: white;
+    }
+
+    .cert-img {
+      width: 800px;
+      height: 600px;
+    }
+  }
 }

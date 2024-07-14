@@ -9,3 +9,23 @@ titles.forEach((title) => {
     }
   });
 });
+
+const modal = document.querySelector(".cert-modal");
+const closeModal = document.querySelector(".cert-modal .close");
+
+document.querySelectorAll(".fa-eye").forEach((icon) => {
+  icon.addEventListener("click", function (event) {
+    event.stopPropagation();
+    modal.style.display = "block";
+  });
+});
+
+closeModal.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
