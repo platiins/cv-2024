@@ -1,3 +1,5 @@
+// open more information (description) when pressing on project title
+
 const titles = document.querySelectorAll(".toggle-title");
 titles.forEach((title) => {
   title.addEventListener("click", () => {
@@ -10,8 +12,10 @@ titles.forEach((title) => {
   });
 });
 
+// modal for the certificate, when pressing eye icon
+
 const modal = document.querySelector(".cert-modal");
-const closeModal = document.querySelector(".cert-modal .close");
+const closeBtn = document.querySelector(".cert-modal .close");
 
 document.querySelectorAll(".fa-eye").forEach((icon) => {
   icon.addEventListener("click", function (event) {
@@ -20,7 +24,7 @@ document.querySelectorAll(".fa-eye").forEach((icon) => {
   });
 });
 
-closeModal.addEventListener("click", function () {
+closeBtn.addEventListener("click", function () {
   modal.style.display = "none";
 });
 
