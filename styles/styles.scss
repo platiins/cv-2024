@@ -56,6 +56,7 @@ body {
       .position {
         font-size: 30px;
         margin-top: 20px;
+        color: #838e83;
       }
     }
 
@@ -137,7 +138,12 @@ body {
   .icon {
     font-size: 22px;
     margin-left: 20px;
-    color: #606c38;
+    color: #838e83;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .skills-list {
@@ -148,15 +154,21 @@ body {
     li {
       width: 30%;
       text-align: center;
+      transition-duration: 1000ms;
+
+      &:hover {
+        color: #838e83;
+        transition-duration: 1000ms;
+      }
     }
   }
 
   .data {
-    border-bottom: 1px solid #606c38;
+    border-bottom: 1px solid #838e83;
     padding: 10px 0;
 
     .symbol {
-      color: #606c38;
+      color: #838e83;
       font-size: 20px;
     }
   }
@@ -191,7 +203,7 @@ body {
         border: white 2px solid;
         overflow: hidden;
         position: relative;
-        color: #606c38;
+        color: #838e83;
         font-size: 20px;
         font-family: "Fjalla One", monospace;
 
@@ -249,7 +261,7 @@ body {
 }
 
 .toggle-title:hover .icon-more {
-  color: black;
+  color: #838e83;
   transition-duration: 500ms;
 }
 
@@ -259,7 +271,7 @@ body {
   transition-duration: 3000ms;
 
   &:hover {
-    color: #606c38;
+    color: #838e83;
     transition-duration: 1000ms;
   }
 }
