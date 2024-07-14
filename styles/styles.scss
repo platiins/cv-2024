@@ -237,6 +237,22 @@ body {
   text-align: justify;
 }
 
+.icon-more {
+  color: white;
+  transition-duration: 500ms;
+  margin-right: 15px;
+  transform: rotate(0deg);
+}
+
+.icon-more.active {
+  transform: rotate(45deg);
+}
+
+.toggle-title:hover .icon-more {
+  color: black;
+  transition-duration: 500ms;
+}
+
 .credentials {
   color: white;
   font-weight: 700;
