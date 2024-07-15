@@ -87,7 +87,7 @@ body a:focus {
 .main .section-title {
   font-family: "Fjalla One", monospace;
   font-size: 50px;
-  margin-top: 50px;
+  margin: 50px 0 30px;
 }
 .main__row-container {
   display: flex;

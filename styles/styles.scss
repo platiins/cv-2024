@@ -108,7 +108,7 @@ body {
   .section-title {
     font-family: "Fjalla One", monospace;
     font-size: 50px;
-    margin-top: 50px;
+    margin: 50px 0 30px;
   }
 
   &__row-container {
@@ -249,6 +249,7 @@ body {
     margin-bottom: 5px;
   }
 }
+
 .toggle-description.active {
   display: block;
   margin-top: 15px;
