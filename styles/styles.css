@@ -31,7 +31,7 @@ body a:focus {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 60px;
 }
 .header__wrapper--left {
   font-family: "Fjalla One", monospace;
@@ -89,7 +89,8 @@ body a:focus {
   font-size: 50px;
   margin: 50px 0 30px;
 }
-.main__row-container {
+.main__row-container,
+.main .project-box {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -99,7 +100,8 @@ body a:focus {
   font-size: 18px;
   font-weight: 700;
 }
-.main__row-container:hover {
+.main__row-container:hover,
+.main .project-box:hover {
   cursor: pointer;
 }
 .main .row-content {
@@ -381,7 +383,7 @@ body a:focus {
   }
   .main__right {
     width: 90%;
-    margin-top: 30px;
+    margin-top: 0;
   }
   .cert-modal__content {
     width: 80%;
@@ -393,12 +395,24 @@ body a:focus {
   }
   .header .title {
     font-size: 50px;
-    word-wrap: break-word;
-    margin: 50px 20px 20px;
+    margin: 50px 20px 0;
   }
   .header__wrapper--right .about-me {
     line-height: 18px;
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .header__wrapper--right .date-and-signature .date {
+    font-size: 12px;
+  }
+  .header__wrapper--right .date-and-signature .signature {
+    width: 100px;
+    height: 50px;
+  }
+  .header__wrapper--left .full-name {
+    font-size: 30px;
+  }
+  .header__wrapper--left .position {
+    font-size: 20px;
   }
   .main {
     padding: 0 20px 20px;
@@ -406,13 +420,14 @@ body a:focus {
   .main .section-title {
     font-size: 30px;
   }
-  .main__row-container {
+  .main__row-container,
+  .main .project-box {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    text-align: end;
+    text-align: start;
     font-size: 14px;
   }
   .main .row-content {
@@ -421,6 +436,9 @@ body a:focus {
   .main .icon {
     margin: 0 0 10px;
     font-size: 14px;
+  }
+  .main__right {
+    gap: 10px;
   }
   .toggle-description.active {
     font-size: 12px;
@@ -439,5 +457,40 @@ body a:focus {
     align-items: center;
     gap: 50px;
     font-size: 12px;
+    margin: 50px 20px 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header .title {
+    font-size: 30px;
+  }
+  .main .section-title {
+    font-size: 22px;
+  }
+  .main .project-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .main .skills-list li {
+    width: 100%;
+    font-size: 12px;
+  }
+  .main__right {
+    font-size: 10px;
+  }
+  .main__right .socials {
+    gap: 5px;
+    margin-top: 30px;
+  }
+  .main__right .socials .sm-btn {
+    width: 90px;
+    font-size: 14px;
+  }
+  .main__right .socials .sm-btn .sm-icon {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

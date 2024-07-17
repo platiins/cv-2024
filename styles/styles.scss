@@ -40,7 +40,7 @@ body {
 
 .header {
   &__wrapper {
-    @include flex(row, space-between, center, 100px);
+    @include flex(row, space-between, center, 60px);
 
     &--left {
       font-family: "Fjalla One", monospace;
@@ -103,7 +103,8 @@ body {
     margin: 50px 0 30px;
   }
 
-  &__row-container {
+  &__row-container,
+  .project-box {
     @include flex(row, space-between, center, 20px);
     width: 100%;
     font-size: 18px;
@@ -425,7 +426,7 @@ body {
 
     &__right {
       width: 90%;
-      margin-top: 30px;
+      margin-top: 0;
     }
   }
 
@@ -446,15 +447,35 @@ body {
   .header {
     .title {
       font-size: 50px;
-      word-wrap: break-word;
-      margin: 50px 20px 20px;
+      margin: 50px 20px 0;
     }
 
     &__wrapper {
       &--right {
         .about-me {
           line-height: 18px;
-          font-size: 14px;
+          font-size: 12px;
+        }
+
+        .date-and-signature {
+          .date {
+            font-size: 12px;
+          }
+
+          .signature {
+            width: 100px;
+            height: 50px;
+          }
+        }
+      }
+
+      &--left {
+        .full-name {
+          font-size: 30px;
+        }
+
+        .position {
+          font-size: 20px;
         }
       }
     }
@@ -466,9 +487,10 @@ body {
       font-size: 30px;
     }
 
-    &__row-container {
+    &__row-container,
+    .project-box {
       @include flex(row, space-between, center, 30px);
-      text-align: end;
+      text-align: start;
       font-size: 14px;
     }
 
@@ -479,6 +501,10 @@ body {
     .icon {
       margin: 0 0 10px;
       font-size: 14px;
+    }
+
+    &__right {
+      gap: 10px;
     }
   }
 
@@ -502,8 +528,50 @@ body {
   .footer {
     @include flex(row, space-between, center, 50px);
     font-size: 12px;
+    margin: 50px 20px 20px;
   }
 }
 
-// @media screen and (max-width: 500px) {
-// }
+@media screen and (max-width: 500px) {
+  .header {
+    .title {
+      font-size: 30px;
+    }
+  }
+
+  .main {
+    .section-title {
+      font-size: 22px;
+    }
+
+    .project-box {
+      @include flex(column, center, center, 10px);
+      text-align: center;
+    }
+
+    .skills-list {
+      li {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+
+    &__right {
+      font-size: 10px;
+
+      .socials {
+        gap: 5px;
+        margin-top: 30px;
+
+        .sm-btn {
+          width: 90px;
+          font-size: 14px;
+
+          .sm-icon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
