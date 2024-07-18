@@ -252,10 +252,10 @@ body {
 }
 
 .icon-more {
-  color: white;
   transition-duration: 500ms;
   margin-right: 15px;
   transform: rotate(0deg);
+  color: #838e83;
 }
 
 .icon-more.active {
@@ -263,7 +263,6 @@ body {
 }
 
 .toggle-title:hover .icon-more {
-  color: #838e83;
   transition-duration: 500ms;
 }
 
