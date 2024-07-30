@@ -307,7 +307,7 @@ body a:focus {
 }
 @media screen and (max-width: 1350px) {
   .main {
-    padding: 0;
+    padding: 0 50px 20px;
   }
   .main .section-title {
     font-size: 40px;
@@ -371,7 +371,6 @@ body a:focus {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 0 50px 20px;
     font-size: 20px;
   }
   .main__left {

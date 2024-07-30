@@ -330,7 +330,7 @@ body {
 
 @media screen and (max-width: 1350px) {
   .main {
-    padding: 0;
+    padding: 0 50px 20px;
 
     // LEFT SIDE OF MAIN SECTION
 
@@ -408,7 +408,6 @@ body {
 
   .main {
     @include flex(column, center, center, 50px);
-    padding: 0 50px 20px;
     font-size: 20px;
 
     // LEFT SIDE OF MAIN SECTION
